@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 import FBSDKCoreKit
 import FBSDKLoginKit
 
@@ -22,7 +23,6 @@ class ViewController: UIViewController,LoginButtonDelegate {
         // Optional: Place the button in the center of your view.
         loginButton.center = view.center
         
-        
 //        loginButton.permissions = ["public_profile","email","user_friends"]
         loginButton.delegate = self
         
@@ -34,10 +34,33 @@ class ViewController: UIViewController,LoginButtonDelegate {
     //MARK:FBLogin Delegate
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
         print("FBLogin")
+        
+        if error == nil{
+            if let token = AccessToken.current{
+                let credential = FacebookAuthProvider.credential(withAccessToken: token.tokenString)
+                Auth.auth().signIn(with: credential) { (result, error) in
+                    if error == nil{
+                        print("FB 整合成功")
+                    }else{
+                        print(error?.localizedDescription)
+                    }
+                }
+            }
+        }
+        
+        
     }
     
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         print("FBLogout")
+        do {
+            try Auth.auth().signOut()
+            print("登出成功")
+        } catch  {
+            print("登出失敗")
+        }
+        
+        
     }
 
 }
