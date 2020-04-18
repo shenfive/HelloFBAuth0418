@@ -13,9 +13,13 @@
 		BAA1F179244ADB3300EAC4F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F177244ADB3300EAC4F1 /* Main.storyboard */; };
 		BAA1F17B244ADB3400EAC4F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F17A244ADB3400EAC4F1 /* Assets.xcassets */; };
 		BAA1F17E244ADB3400EAC4F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F17C244ADB3400EAC4F1 /* LaunchScreen.storyboard */; };
+		BAA1F186244ADB7200EAC4F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAA1F185244ADB7200EAC4F1 /* GoogleService-Info.plist */; };
+		EEF9D781BFFE7C93615C70A2 /* Pods_HelloFBAuth0418.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 392BFB73F34A3A2826ACFA2E /* Pods_HelloFBAuth0418.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		392BFB73F34A3A2826ACFA2E /* Pods_HelloFBAuth0418.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloFBAuth0418.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F6D221812294031776CAB54 /* Pods-HelloFBAuth0418.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFBAuth0418.debug.xcconfig"; path = "Target Support Files/Pods-HelloFBAuth0418/Pods-HelloFBAuth0418.debug.xcconfig"; sourceTree = "<group>"; };
 		BAA1F16E244ADB3300EAC4F1 /* HelloFBAuth0418.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloFBAuth0418.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA1F171244ADB3300EAC4F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAA1F173244ADB3300EAC4F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		BAA1F17A244ADB3400EAC4F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAA1F17D244ADB3400EAC4F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAA1F17F244ADB3400EAC4F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAA1F185244ADB7200EAC4F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE425DD3C0964707B663B3F5 /* Pods-HelloFBAuth0418.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloFBAuth0418.release.xcconfig"; path = "Target Support Files/Pods-HelloFBAuth0418/Pods-HelloFBAuth0418.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEF9D781BFFE7C93615C70A2 /* Pods_HelloFBAuth0418.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69676186970879A29B157B99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F6D221812294031776CAB54 /* Pods-HelloFBAuth0418.debug.xcconfig */,
+				FE425DD3C0964707B663B3F5 /* Pods-HelloFBAuth0418.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A22AF0DF6EE484BF5978A03B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				392BFB73F34A3A2826ACFA2E /* Pods_HelloFBAuth0418.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BAA1F165244ADB3300EAC4F1 = {
 			isa = PBXGroup;
 			children = (
 				BAA1F170244ADB3300EAC4F1 /* HelloFBAuth0418 */,
 				BAA1F16F244ADB3300EAC4F1 /* Products */,
+				69676186970879A29B157B99 /* Pods */,
+				A22AF0DF6EE484BF5978A03B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +86,7 @@
 				BAA1F171244ADB3300EAC4F1 /* AppDelegate.swift */,
 				BAA1F173244ADB3300EAC4F1 /* SceneDelegate.swift */,
 				BAA1F175244ADB3300EAC4F1 /* ViewController.swift */,
+				BAA1F185244ADB7200EAC4F1 /* GoogleService-Info.plist */,
 				BAA1F177244ADB3300EAC4F1 /* Main.storyboard */,
 				BAA1F17A244ADB3400EAC4F1 /* Assets.xcassets */,
 				BAA1F17C244ADB3400EAC4F1 /* LaunchScreen.storyboard */,
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BAA1F182244ADB3400EAC4F1 /* Build configuration list for PBXNativeTarget "HelloFBAuth0418" */;
 			buildPhases = (
+				20F8D40C84345AF499DBB7E5 /* [CP] Check Pods Manifest.lock */,
 				BAA1F16A244ADB3300EAC4F1 /* Sources */,
 				BAA1F16B244ADB3300EAC4F1 /* Frameworks */,
 				BAA1F16C244ADB3300EAC4F1 /* Resources */,
+				597C3CD6772F0E4BBCD44BDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA1F17E244ADB3400EAC4F1 /* LaunchScreen.storyboard in Resources */,
+				BAA1F186244ADB7200EAC4F1 /* GoogleService-Info.plist in Resources */,
 				BAA1F17B244ADB3400EAC4F1 /* Assets.xcassets in Resources */,
 				BAA1F179244ADB3300EAC4F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20F8D40C84345AF499DBB7E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HelloFBAuth0418-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		597C3CD6772F0E4BBCD44BDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloFBAuth0418/Pods-HelloFBAuth0418-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloFBAuth0418/Pods-HelloFBAuth0418-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloFBAuth0418/Pods-HelloFBAuth0418-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BAA1F16A244ADB3300EAC4F1 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		BAA1F183244ADB3400EAC4F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F6D221812294031776CAB54 /* Pods-HelloFBAuth0418.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +374,7 @@
 		};
 		BAA1F184244ADB3400EAC4F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE425DD3C0964707B663B3F5 /* Pods-HelloFBAuth0418.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
